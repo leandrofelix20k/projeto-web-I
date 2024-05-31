@@ -1,7 +1,106 @@
 * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: Be Vietnam, sans-serif;
+
 }
 
-h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+button {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: .4rem .8rem;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
 }
+
+button:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+button:hover > i {
+    color: white;
+}
+
+button i {
+    pointer-events: none;
+    color: #000000;
+    font-weight: bold;
+  }
+
+input, select{
+    padding: .2rem .4rem;
+}
+
+.hide {
+    display: none;
+}
+
+.todo-box {
+    background-color: gray;
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 1rem;
+    border: 15px;
+}
+
+.todo-box header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #000000;
+  }
+
+#adicionar-form, #editar-form {
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+#adicionar-form p, #editar-form p {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex
+}
+
+.form-control input {
+    margin-right: .5rem;
+}
+
+.tarefa {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #000000;
+    transition: 0.3s;
+    align-items: center;
+  }
+  
+  .tarefa h3 {
+    flex: 1;
+    font-size: 0.9rem;
+  }
+  
+  .tarefa button {
+    margin-left: 0.4rem;
+  }
+  
+  .concluido {
+    background-color: gray;
+  }
+
+  .concluido h3 {
+    color: rgb(0, 0, 0);
+    text-decoration: line-through;
+    font-style: italic;
+  }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="todo-box">
+        <header>
+            <h1>To do List</h1>
+        </header>
+        <form id="adicionar-fomr">
+            <p>Adicionar Tarefa</p>
+            <div class="adicionar-tarefa">
+                <input type="text" id="adicionar" placeholder="Digite sua tarefa...">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="editar-form">
+            <p>Editar Tarefa</p>
+            <div class="editar-tarefa">
+                <input type="text" id="editar">
+                <button type="submit">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+            </div>
+        </form>
+        <div class="lista-tarefas">
+            <div class="tarefa">
+                <h3>Tarefa 1</h3>
+                <div class="acoes">
+                    <button class="finalizar">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="editar">
+                        <i class="fa-solid fa-edit"></i>
+                    </button>
+                    <button class="excluir">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="tarefa">
+                <h3>Tarefa 2</h3>
+                <div class="acoes">
+                    <button class="finalizar">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="editar">
+                        <i class="fa-solid fa-edit"></i>
+                    </button>
+                    <button class="excluir">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="tarefa">
+                <h3>Tarefa 3</h3>
+                <div class="acoes">
+                    <button class="finalizar">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="editar">
+                        <i class="fa-solid fa-edit"></i>
+                    </button>
+                    <button class="excluir">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

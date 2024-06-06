@@ -1,7 +1,5 @@
 const adicionarForm = document.querySelector("#adicionar-form");
 const adicionar = document.querySelector("#adicionar");
-const editarForm = document.querySelector("#edit-form");
-const editar = document.querySelector("#editar");
 const listaTarefas = document.querySelector("#lista-tarefas");
 
 const salvarInput = (input) => {

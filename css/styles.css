@@ -3,7 +3,15 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Be Vietnam, sans-serif;
+    box-sizing: border-box;
+}
 
+body {
+  background-image: url('../img/Space.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 button {
@@ -38,12 +46,8 @@ input, select{
     padding: .2rem .4rem;
 }
 
-.hide {
-    display: none;
-}
-
 .todo-box {
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     max-width: 600px;
     margin: 3rem auto;
     padding: 1rem;
@@ -51,19 +55,18 @@ input, select{
 }
 
 .todo-box header {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
     text-align: center;
     padding: 0 1rem 1rem;
     border-bottom: 1px solid #000000;
   }
 
-#adicionar-form, #editar-form {
+#adicionar-form {
     padding: 1rem;
     border-bottom: 1px solid black;
 }
 
-#adicionar-form p, #editar-form p {
+#adicionar-form p {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     font-weight: bold;

@@ -26,6 +26,35 @@
                 </button>
             </div>
         </form>
+        <form id="editar-form" class="hide">
+            <p>Editar tarefa</p>
+            <div class="form-control">
+                <input type="text" id="editar">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancelar-edicao">Cancelar</button>
+        </form>
+        <div id="barra-ferramentas">
+            <div id="buscar">
+              <h4>Pesquisar:</h4>
+              <form>
+                <input type="text" id="buscar-input" placeholder="Buscar..." />
+                <button id="apagar-busca">
+                  <i class="fa-solid fa-delete-left"></i>
+                </button>
+              </form>
+            </div>
+            <div id="filtrar">
+              <h4>Filtrar:</h4>
+              <select id="filtro">
+                <option value="todos">Todos</option>
+                <option value="feitos">Feitos</option>
+                <option value="a-fazer">A fazer</option>
+              </select>
+            </div>
+          </div>
         <div id="lista-tarefas">
             
         </div>

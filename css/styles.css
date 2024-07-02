@@ -7,11 +7,11 @@
 }
 
 body {
-  background-image: url('../img/Space.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    background-image: url('../img/Space.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 button {
@@ -30,6 +30,7 @@ button {
 
 button:hover {
     background-color: rgb(0, 0, 0);
+    color: white;
 }
 
 button:hover > i {
@@ -40,6 +41,7 @@ button i {
     pointer-events: none;
     color: #000000;
     font-weight: bold;
+    pointer-events: none;
   }
 
 input, select{
@@ -54,19 +56,29 @@ input, select{
     border: 15px;
 }
 
+.todo-box h1 {
+    font-size: 4rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
 .todo-box header {
-    font-size: 2rem;
     text-align: center;
     padding: 0 1rem 1rem;
     border-bottom: 1px solid #000000;
   }
 
-#adicionar-form {
+.hide {
+    display: none;
+}
+
+#adicionar-form, #editar-form{
     padding: 1rem;
     border-bottom: 1px solid black;
 }
 
-#adicionar-form p {
+#adicionar-form p, #editar-form p{
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
@@ -79,6 +91,55 @@ input, select{
 .form-control input {
     margin-right: .5rem;
 }
+#cancelar-edicao {
+    margin-top: 1rem;
+    color: #000000;
+}
+
+#barra-ferramentas {
+    padding: 1rem;
+    border-bottom: 1px solid #000000;
+    display: flex;
+}
+
+#barra-ferramentas h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#buscar {
+    border-right: 1px solid white;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#buscar h4 {
+    margin-bottom: 0.5rem;
+}
+
+#buscar form {
+    display: flex;
+}
+
+#buscar input {
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filtrar {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filtrar select {
+    flex: 1;
+}
+
 
 .tarefa {
     padding: 1rem 1rem;
@@ -89,21 +150,21 @@ input, select{
     align-items: center;
   }
   
-  .tarefa h3 {
+.tarefa h3 {
     flex: 1;
     font-size: 0.9rem;
-  }
-  
-  .tarefa button {
-    margin-left: 0.4rem;
-  }
-  
-  .concluido {
-    background-color: gray;
-  }
+}
 
-  .concluido h3 {
+.tarefa button {
+    margin-left: 0.4rem;
+}
+
+.concluido {
+    background-color: gray;
+}
+
+.concluido h3 {
     color: rgb(0, 0, 0);
     text-decoration: line-through;
     font-style: italic;
-  }
+}
